@@ -1,1 +1,1 @@
-script = tp sur les conditions javascript
+script = tp sur les conditions, boite de dialogue javascript
