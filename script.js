@@ -108,13 +108,55 @@
 //     alert("nom incorrect")
 // }
 
-function calculerIMC(poids, taille) {
-    taille = taille / 100
-    return poids / (taille * taille)
+// function calculerIMC(poids, taille) {
+//     taille = taille / 100
+//     return poids / (taille * taille)
+// }
+
+// let poids = parseFloat(prompt("quel est votre poids en kg","92"))
+// let taille = parseFloat(prompt("quel est votre taille en m","190"))
+// let imc = calculerIMC(poids, taille)
+
+// alert("votre imc est de :" + " " + imc.toFixed(2))
+
+for (let i = 1; i <= 10; i++){
+    console.log(i)
 }
 
-let poids = parseFloat(prompt("quel est votre poids en kg","92"))
-let taille = parseFloat(prompt("quel est votre taille en m","190"))
-let imc = calculerIMC(poids, taille)
+let i = 10
+while (i >= 0) {
+    console.log(i)
+    i--
+}
 
-alert("votre imc est de :" + " " + imc.toFixed(2))
+for (let i = 0; i <= 20; i += 2) {
+    console.log(i)
+}
+
+function somme(n) {
+    let total = 0
+    for (let i = 1; i <= n; i++) {
+        total += i
+    }
+    return total
+}
+
+console.log(somme(10))
+
+function multiplication(n) {
+    for (let i = 1; i <= 10; i++) {
+        console.log (n + " x " + i + " = " + (n*i))
+    }
+}
+
+multiplication(123456789);
+
+let tableau = ["mehdi", "med", "meh"]
+for (let i = 0; i < tableau.length; i++) {
+    console.log(tableau[i])
+}
+
+let tableauu = ["mehdii", "medd", "mehh"]
+for (let prenom of tableauu) {
+    console.log(prenom)
+}
