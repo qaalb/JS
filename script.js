@@ -97,4 +97,24 @@
 //     console.log("le prix de la table et l'amoire est pareil")
 // }
 
-alert("HELLO WORLD")
+// alert("HELLO WORLD")
+
+// let nomutilisateur = prompt("quel est votre nom?")
+// let confirmatin = confirm("c'est bien votre nom ?" + " " + nomutilisateur)
+
+// if (confirmatin) {
+//     alert("bienvenue" + " " + nomutilisateur)
+// } else {
+//     alert("nom incorrect")
+// }
+
+function calculerIMC(poids, taille) {
+    taille = taille / 100
+    return poids / (taille * taille)
+}
+
+let poids = parseFloat(prompt("quel est votre poids en kg","92"))
+let taille = parseFloat(prompt("quel est votre taille en m","190"))
+let imc = calculerIMC(poids, taille)
+
+alert("votre imc est de :" + " " + imc.toFixed(2))
