@@ -284,10 +284,49 @@
 
 
 
-
 // function calculerTVA(prixHT, tauxTVA) {
 //     return prixHT * (1 + tauxTVA / 100)
 //   }
   
 // console.log(calculerTVA(100, 20))
 // console.log(calculerTVA(50, 5))
+
+
+
+
+
+// function convertirTemperature(celsius) {
+//     return celsius * 9/5 + 32;
+// }
+
+// console.log(convertirTemperature(25))
+
+
+
+
+
+// const PI = 3.14;
+
+// function perimetreCercle(rayon) {
+//     return 2 * PI * rayon;
+// }
+
+// function aireCercle(rayon) {
+//     return PI * rayon * rayon;
+// }
+
+// const rayon = 5;
+
+// console.log("Périmètre du cercle avec rayon " + rayon + " : " + perimetreCercle(rayon));
+// console.log("Aire du cercle avec rayon " + rayon + " : " + aireCercle(rayon));
+
+
+                                                                        // LES TABLEAUX
+
+
+// let nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// console.log(nombres)
+
+
+
+
