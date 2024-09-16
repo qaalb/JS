@@ -123,7 +123,7 @@
 // let taille = parseFloat(prompt("quel est votre taille en m","190"))
 // let imc = calculerIMC(poids, taille)
 
-// alert("votre imc est de :" + " " + imc.toFixed(2))
+// alert("votre imc est de :" + " " + imc)
 
 
 
@@ -321,6 +321,11 @@
 // console.log("Aire du cercle avec rayon " + rayon + " : " + aireCercle(rayon));
 
 
+
+
+
+
+
                                                                         // LES TABLEAUX
 
 
@@ -328,5 +333,119 @@
 // console.log(nombres)
 
 
+
+
+// const nombres = [10, 20, 30, 40, 50];
+// console.log(nombres[0], nombres[nombres.length - 1]);
+
+
+
+
+// const nombres = [10, 20, 30, 40, 50];
+// nombres[nombres.length - 1] = 0;
+// console.log(nombres);
+
+
+
+
+// const nombres = [10, 20, 30, 40, 50];
+// nombres.push(11, 12);
+// nombres.shift();
+// console.log(nombres);
+
+
+
+
+// const recherche = () => {
+
+// let arr = [1, 2, 3, 4, 5];
+// let isIncluded = arr.includes(2); // Vérifie si le tableau contient 2
+// console.log(isIncluded); // Affiche true
+// }
+
+// recherche()
+
+
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// let arr3 = arr1.concat(arr2);
+// console.log(arr3); // Affiche [1, 2, 3, 4, 5, 6]
+
+
+
+
+// var marque = [apple, samsung, dell, hp, lg, acer]
+
+// function marques() {
+//     console.log("Liste des marques : " + marque.join(', '));
+// }
+
+// marques();
+
+// var choix = prompt("Quelle marque préférez-vous ?");
+
+// var index = marques.indexOf(choix.toLowerCase());
+
+// if (index !== -1) {
+//     marques.splice(index, 1);
+//     console.log("ok");
+// } else {
+//     console.log("indisponible");
+// }
+
+// marques();
+
+
+
+
+
+                                                                // SYNTHESE 1
+
+
+
+
+
+
+let etudiants = parseInt(prompt("combien d'étudiants sont dans la classe ?"))
+let eval = parseInt(prompt("combien d'évaluations seront saisies pour chaque étudiant ?"))
+
+for (let i = 0; i < etudiants; i++) {
+    let notes = []
+    let sommenote = 0
+    
+    for (let j = 0; j < eval; j++) {
+        let note = parseFloat(prompt(`entrez la note ${j + 1} de l'étudiant ${i + 1}:`))
+        notes.push(note)
+        sommenote += note
+    }
+    
+    let moyenne = sommenote / eval
+    let sommemoy = 0
+    sommemoy += moyenne
+    
+    let appreciation
+    if (moyenne > 18) {
+        appreciation = "Excellent"
+    } else if (moyenne >= 15) {
+        appreciation = "Très bien"
+    } else if (moyenne >= 12) {
+        appreciation = "Bien"
+    } else {
+        appreciation = "Peut mieux faire"
+    }
+    
+    alert(`étudiant ${i + 1} :\nMoyenne = ${moyenne}\nAppréciation = ${appreciation}`)
+}
+
+let moyenneg = sommemoy / etudiants
+alert(`Moyenne générale de la classe = ${moyenneg}`)
+
+
+
+
+
+
+                                                                //Synthese 2
 
 
