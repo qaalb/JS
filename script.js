@@ -407,39 +407,39 @@
 
 
 
-let etudiants = parseInt(prompt("combien d'étudiants sont dans la classe ?"))
-let eval = parseInt(prompt("combien d'évaluations seront saisies pour chaque étudiant ?"))
+// let etudiants = parseInt(prompt("combien d'étudiants sont dans la classe ?"))
+// let eval = parseInt(prompt("combien d'évaluations seront saisies pour chaque étudiant ?"))
 
-for (let i = 0; i < etudiants; i++) {
-    let notes = []
-    let sommenote = 0
+// for (let i = 0; i < etudiants; i++) {
+//     let notes = []
+//     let sommenote = 0
     
-    for (let j = 0; j < eval; j++) {
-        let note = parseFloat(prompt(`entrez la note ${j + 1} de l'étudiant ${i + 1}:`))
-        notes.push(note)
-        sommenote += note
-    }
+//     for (let j = 0; j < eval; j++) {
+//         let note = parseFloat(prompt(`entrez la note ${j + 1} de l'étudiant ${i + 1}:`))
+//         notes.push(note)
+//         sommenote += note
+//     }
     
-    let moyenne = sommenote / eval
-    let sommemoy = 0
-    sommemoy += moyenne
+//     let moyenne = sommenote / eval
+//     let sommemoy = 0
+//     sommemoy += moyenne
     
-    let appreciation
-    if (moyenne > 18) {
-        appreciation = "Excellent"
-    } else if (moyenne >= 15) {
-        appreciation = "Très bien"
-    } else if (moyenne >= 12) {
-        appreciation = "Bien"
-    } else {
-        appreciation = "Peut mieux faire"
-    }
+//     let appreciation
+//     if (moyenne > 18) {
+//         appreciation = "Excellent"
+//     } else if (moyenne >= 15) {
+//         appreciation = "Très bien"
+//     } else if (moyenne >= 12) {
+//         appreciation = "Bien"
+//     } else {
+//         appreciation = "Peut mieux faire"
+//     }
     
-    alert(`étudiant ${i + 1} :\nMoyenne = ${moyenne}\nAppréciation = ${appreciation}`)
-}
+//     alert(`étudiant ${i + 1} :\nMoyenne = ${moyenne}\nAppréciation = ${appreciation}`)
+// }
 
-let moyenneg = sommemoy / etudiants
-alert(`Moyenne générale de la classe = ${moyenneg}`)
+// let moyenneg = sommemoy / etudiants
+// alert(`Moyenne générale de la classe = ${moyenneg}`)
 
 
 
@@ -447,5 +447,34 @@ alert(`Moyenne générale de la classe = ${moyenneg}`)
 
 
                                                                 //Synthese 2
+
+
+                                                            
+
+let listeCourses = [];
+
+while (true) {
+    let choix = prompt("1: Ajouter | 2: Retirer | 3: Afficher | 4: Vider | 5: Quitter");
+
+    if (choix === '1') {
+        let item = prompt("Ajouter :");
+        listeCourses.push(item);
+    } else if (choix === '2') {
+        let item = prompt("Retirer :");
+        let index = listeCourses.indexOf(item);
+        if (index > -1) listeCourses.splice(index, 1);
+        else alert("Élément non trouvé.");
+    } else if (choix === '3') {
+        alert("Liste de courses : " + (listeCourses.length ? listeCourses.join(", ") : "Vide"));
+    } else if (choix === '4') {
+        listeCourses = [];
+        alert("Liste vidée.");
+    } else if (choix === '5' || choix === 'q') {
+        alert("Au revoir !");
+        break;
+    } else {
+        alert("Choix invalide.");
+    }
+}
 
 
