@@ -21,6 +21,14 @@ const mot = maListe.getElementsByTagName ('li')[1]
 
 mot.style.visibility = "hidden"
 
-mot.remove();
+mot.remove()
+
+let bouton = document.getElementById("boutton")
+
+bouton.addEventListener('click', function() {
+    bouton.style.backgroundColor = "green";
+});
+
+
 
 
